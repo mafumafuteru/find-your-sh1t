@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@faker-js/faker": "^9.7.0",
+    "@types/pg": "^8.11.13",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "pg": "^8.14.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  },
+  "name": "find-your-sh1t",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create-tables": "tsx src/createTables.ts",
+    "create-indexes": "tsx src/createIndexes.ts",
+    "insert-rows": "tsx src/insertRows.ts",
+    "create-all": "npm run create-tables && npm run create-indexes && npm run insert-rows",
+    "dev": "tsx --watch src/index.ts "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/express": "^5.0.1"
+  }
+}
